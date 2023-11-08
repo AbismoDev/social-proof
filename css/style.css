@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body{
+    background-image: url('../assets/bg-pattern-top-desktop.svg'), 
+    url('../assets/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: -350px -250px, 250px 100px;
+    background-size: cover, cover;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2%;
+}
+
+p{
+    font-size: 15px;
+}
+
+.font-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.attribution { 
+    font-size: 12px; 
+    color: #181818;
+    text-align: center; 
+}
+.attribution a { 
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.attribution a:hover{
+    opacity: .7;
+}
+
+.socialp-container{
+    max-width: 1024px;
+    width: 100%;
+}
+
+.socialp-content{
+    width: 100%;
+    display: flex;
+}
+
+.socialp-text{
+    width: 50%;
+}
+
+.socialp-text h1{
+    max-width: 300px;
+    width: 100%;
+    font-size: 42px;
+    color: hsl(300, 43%, 22%);
+}
+
+.socialp-text p{
+    max-width: 350px;
+    width: 100%;
+    line-height: 20px;
+    margin-top: 25px;
+    color: hsl(303, 10%, 53%);
+}
+
+.socialp-rated-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialp-rated{
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.socialp-rated-card{
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+}
+
+.socialp-rated-card:first-child{
+    align-self: flex-start;
+}
+
+.socialp-rated-card:last-child{
+    align-self: flex-end;
+}
+
+.socialp-rated-card-text{
+    margin-left: 20px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.socialp-depositions{
+    height: 260px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialp-depositions-card{
+    width: calc(33.333% - 20px);
+    height: 225px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: hsl(300, 43%, 22%);
+}
+
+.socialp-depositions-card:first-child{
+    align-self: flex-start;
+}
+
+.socialp-depositions-card:last-child{
+    align-self: flex-end;
+}
+
+.socialp-profile-info{
+    display: flex;
+    align-items: center;
+}
+
+.socialp-profile-info img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.socialp-profile-name{
+    margin-left: 20px;
+}
+
+.socialp-profile-name h2{
+    color: hsl(300, 24%, 96%);
+    font-size: 16px;
+}
+
+.socialp-profile-name p{
+    color: hsla(333, 80%, 67%, 0.603);
+    font-weight: 700;
+}
+
+.socialp-depositions-card-text{
+    margin-top: 25px;
+    color: hsl(300, 24%, 96%);
+}
+
+@media (max-width: 820px){
+    .socialp-content{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }   
+
+    .socialp-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }    
+
+    .socialp-rated-container{
+        width: 100%;
+    }
+
+    .socialp-rated-card:first-child{
+        align-self: center;
+    }
+
+    .socialp-rated-card:last-child{
+        align-self: center;
+    }
+
+    .socialp-depositions{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .socialp-depositions-card{
+        width: 80%;
+    }
+
+    .socialp-depositions-card:first-child{
+        align-self: center;
+    }
+    
+    .socialp-depositions-card:last-child{
+        align-self: center;
+    }
+}
+
+@media (max-width: 540px){      
+    .socialp-depositions-card{
+        width: 100%;
+    }   
+
+    .socialp-rated-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
